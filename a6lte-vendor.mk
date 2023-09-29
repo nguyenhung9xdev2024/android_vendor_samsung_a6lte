@@ -16,10 +16,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a6lte/proprietary/vendor/lib64/nfc_nci_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci_sec.so \
     vendor/samsung/a6lte/proprietary/vendor/lib64/vendor.samsung.hardware.nfc@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.nfc@2.0.so
 
-# wcnss_filter 
-PRODUCT_COPY_FILES += \
-    vendor/samsung/a6lte/proprietary/vendor/bin/wcnss_filter:$(TARGET_COPY_OUT_VENDOR)/bin/wcnss_filter
-
 # Bluetooth
 PRODUCT_COPY_FILES += \
     vendor/samsung/a6lte/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service \
@@ -29,12 +25,15 @@ PRODUCT_COPY_FILES += \
 
 # Wi-Fi
 PRODUCT_COPY_FILES += \
-    vendor/samsung/a6lte/proprietary/vendor/etc/wifi/bcmdhd_apsta.bin_36:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_apsta.bin_36 \
+    vendor/samsung/a6lte/proprietary/vendor/etc/wifi/bcmdhd_apsta.bin_c5:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_apsta.bin_c5 \
+    vendor/samsung/a6lte/proprietary/vendor/etc/wifi/bcmdhd_apsta.bin_c5_blob:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_apsta.bin_c5_blob \
     vendor/samsung/a6lte/proprietary/vendor/etc/wifi/bcmdhd_clm.blob:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_clm.blob \
-    vendor/samsung/a6lte/proprietary/vendor/etc/wifi/bcmdhd_mfg.bin_36:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_mfg.bin_36 \
-    vendor/samsung/a6lte/proprietary/vendor/etc/wifi/bcmdhd_sta.bin_36:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_sta.bin_36 \
-    vendor/samsung/a6lte/proprietary/vendor/etc/wifi/nvram.txt_36:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram.txt_36 \
-    vendor/samsung/a6lte/proprietary/vendor/firmware/bcm43436B0_V0086.0137.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm43436B0_V0086.0137.hcd \
+    vendor/samsung/a6lte/proprietary/vendor/etc/wifi/bcmdhd_mfg.bin_c5:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_mfg.bin_c5 \
+    vendor/samsung/a6lte/proprietary/vendor/etc/wifi/bcmdhd_mfg.bin_c5_blob:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_mfg.bin_c5_blob \
+    vendor/samsung/a6lte/proprietary/vendor/etc/wifi/bcmdhd_sta.bin_c5:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_sta.bin_c5 \
+    vendor/samsung/a6lte/proprietary/vendor/etc/wifi/bcmdhd_sta.bin_c5_blob:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_sta.bin_c5_blob \
+    vendor/samsung/a6lte/proprietary/vendor/etc/wifi/nvram.txt_c5:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram.txt_c5 \
+    vendor/samsung/a6lte/proprietary/vendor/firmware/bcm4345C5_V0069.0172.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm4345C5_V0069.0172.hcd \
     vendor/samsung/a6lte/proprietary/vendor/firmware/fimc_is_lib.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fimc_is_lib.bin
 
 # Camera
@@ -43,8 +42,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a6lte/proprietary/vendor/lib64/libexynoscamera3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynoscamera3.so \
     vendor/samsung/a6lte/proprietary/vendor/lib/libexynoscamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynoscamera.so \
     vendor/samsung/a6lte/proprietary/vendor/lib/libexynoscamera3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynoscamera3.so \
-    vendor/samsung/a6lte/proprietary/vendor/firmware/setfile_3l2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_3l2.bin \
-    vendor/samsung/a6lte/proprietary/vendor/firmware/setfile_4h5yc.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_4h5yc.bin
+    vendor/samsung/a6lte/proprietary/vendor/firmware/setfile_2p6.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_2p6.bin \
+    vendor/samsung/a6lte/proprietary/vendor/firmware/setfile_2p6_front.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_2p6_front.bin \
     
 
 # Fingerprint
@@ -59,12 +58,12 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_COPY_FILES += \
-    vendor/samsung/a6lte/proprietary/vendor/bin/hw/android.hardware.sensors@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors@1.0-service \
     vendor/samsung/a6lte/proprietary/vendor/lib/hw/sensors.universal7870.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.universal7870.so 
 
 
 # TFA-Audio
 PRODUCT_COPY_FILES += \
-    vendor/samsung/a6lte/proprietary/vendor/etc/Tfa9896.cnt:$(TARGET_COPY_OUT_VENDOR)/etc/Tfa9896.cnt \
-    vendor/samsung/universal7870-common/proprietary/audio/m10lte/lib/libtfa98xx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtfa98xx.so \
-    vendor/samsung/universal7870-common/proprietary/audio/m10lte/lib/hw/audio.primary.universal7870.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.universal7870.so 
+    vendor/samsung/a6lte/proprietary/vendor/firmware/cs35l40-dsp1-spk-prot-calib.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l40-dsp1-spk-prot-calib.bin \
+    vendor/samsung/a6lte/proprietary/vendor/firmware/cs35l40-dsp1-spk-prot.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l40-dsp1-spk-prot.bin \
+    vendor/samsung/a6lte/proprietary/vendor/firmware/cs35l40-dsp1-spk-prot.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l40-dsp1-spk-prot.wmfw \
+    vendor/samsung/universal7870-common/proprietary/audio/a6lte/lib/hw/audio.primary.universal7870.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.universal7870.so 
